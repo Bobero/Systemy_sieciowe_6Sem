@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/kontakt.css">
+
+  <title>Sklep internetowy</title>
+</head>
+
+<body>
+  <div class="cont">
+
+    <header class="naglowek">
+      <a href="./index.html"><img src="./img/logo.PNG" class="logo"></a>
+      <nav>
+        <ul>
+          <li id="szukaj"><input type="text" placeholder="Znajdź wybrany produkt"><button class="lupa_butt"><img src="./img/lupa.png" id="lupa"></button></li>
+          <li><a href="./kategorie.html">Kategorie</a></li>
+          <li><a href="./sklep.html">Panel</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="./koszyk.html"><img src="./img/koszyk3.png" class="kosz_img"></a>
+    </header>
+
+
+    <main class="glowna">
+      <div class="dane">
+        <h1>Kontakt</h1>
+        <h3>phone-shop.cba.pl</h3>
+        <p>
+          <b>Phone Shop S.A</b><br>
+          ul. Gliwicka 14B,<br>
+          44-100 Gliwice<br>
+        </p>
+        <p>
+          <b>Infolinia:</b><br>
+          (11) 222 33 44 - z telefonu komórkowego<br>
+          111 222 333<br>
+        </p>
+        <p>
+          <b>Infolinia czynna:</b><br>
+          poniedziałek-piątek 08:00-20:00<br>
+          sobota-niedziela 09:00-17:00<br>
+
+        </p>
+        <p>
+          <b> E-mail:</b><br>
+          Obsługa zamówień internetowych: shopmarket@gmail.com<br>
+          Biuro Obsługi Klienta: SMoffice@gmail.com<br>
+        </p>
+
+      </div>
+      <div class="formularz">
+        <h1>Napisz do nas</h1>
+        <form method="post" action="form.php">
+          <label class="pkt_formularz">
+            <p class="podpis">Imię i nazwisko </p>
+            <input type="text" name="imie" placeholder="Jan Kowalski" class="pole" required>
+          </label>
+          <label class="pkt_formularz">
+            <p class="podpis">E-mail </p>
+            <input type="email" name="email" placeholder="e-mail@domena.com" class="pole" required>
+          </label>
+          <label>
+            <p class="podpis">Twoja wiadomość</p>
+            <textarea name="wiadomosc" placeholder="Witam. Piszę w sprawie..." class="area" required></textarea>
+          </label>
+          <label>
+            <p><input type="submit" value="Wyślij" class="wyslij"></p>
+          </label>
+        </form>
+      </div>
+    </main>
+
+
+    <footer class="stopka">
+      <div class="linki">
+        <a href="#">Link do Facebooka</a>
+        <a href="#">Link do Forum</a>
+        <a href="#">Link do Mapy</a>
+        <a href="#">Link do Regulaminu</a>
+        <a href="#">Link do Polityki prywatności</a>
+        <a href="#">Link do Wsparcia technicznego</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

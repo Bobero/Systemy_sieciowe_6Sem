@@ -1,0 +1,341 @@
+body {
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+    font-size: 1.2em;
+    background-color: #EDF2F4;
+    margin: 0em;
+    padding: 0em;
+}
+a{
+    margin:0px;
+    padding: 0px;
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.naglowek {
+    flex-basis: 100%;
+    display: flex;
+    padding: 1.2em;
+    padding-top: 0em;
+    justify-content: center;
+    border-bottom: 0.2em rgb(76, 111, 156) solid;
+    align-items: center;
+}
+
+.naglowek a {
+    flex-basis: 10%;
+    align-self: center;
+}
+
+img {
+    width: 100px;
+    flex-basis: 100%;
+}
+.logo
+{
+    width: 15em;
+    border-radius: 1em;
+}
+.naglowek nav {
+    flex-basis: 100%;
+    margin-top: 0.7em;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    list-style: none;
+}
+
+li {
+    flex-basis: 15%;
+
+}
+#szukaj{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 1em;
+
+}
+.lupa_butt{
+    margin: 0;
+    padding: 0,2em;
+    background: white;
+    border: 1px solid gray;
+    border-left: none;
+}
+#lupa{
+    width: 30px;
+}
+
+li input[type=text] {
+    font-size: 17px;
+    border: 1px solid gray;
+    height: 40%;
+    padding: 1em;
+    border-right: none;
+
+  }
+
+li a {
+    display: block;
+    padding: 1em 0em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(82, 82, 82);
+    border-left: 2px rgb(76, 111, 156) solid;
+}
+li:last-child{
+    border-right: 2px rgb(76, 111, 156) solid;
+    margin-right: 1em;
+}
+li:last-child:hover{
+    border-right: 2px rgb(76, 111, 156) solid;
+    margin-right: 1em;
+}
+li a:hover {
+    text-decoration: none;
+    color: rgb(82, 82, 82); 
+    background: whitesmoke;
+}
+
+.kosz_img{
+    width: 70px;
+}
+
+.glowna {
+    flex-basis: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    padding-top: 0em;
+    justify-content: center;
+
+}
+
+.produkt {
+    flex-basis: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    justify-content: space-evenly;
+}
+
+#prod {
+    width: 25em;
+    background-color: white;
+    padding: 1.3em;
+    border-radius: 1em;
+}
+
+.dane {
+    padding: 1.3em;
+    background-color: white;
+    border-radius: 1em;
+    flex-basis: 15%;
+
+}
+
+.dane * {
+    text-align: center;
+}
+
+.dane h4 {
+    padding-bottom: 1em;
+    border-bottom: 3px solid gray;
+    border-radius: 1px;
+    margin-bottom: 2em;
+    font-size: larger;
+}
+
+.platnosc {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 25%;
+    align-items: center;
+}
+
+.platnosc h3 {
+    margin: 1.2em 1em;
+}
+
+.svg {
+    margin: 5px;
+}
+
+.svg img {
+    width: 2em;
+}
+
+#cena {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#ile {
+    width: 60px;
+    height: 61px;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+}
+
+#koszyk {
+    background: rgba(39, 74, 172, 0.993);
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.opis {
+    flex-basis: 70%;
+    background-color: whitesmoke;
+    border: 2px solid gray;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.opis h1 {
+    text-align: center;
+}
+
+.opis p {
+    font-size: larger;
+}
+
+.podobne {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.podobne h3 {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+.podobny_item {
+    flex-basis: 23%;
+    border: 2px solid teal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.podobny_item h5{
+    font-size: 1.5em;
+    text-align: center;
+}
+.podobny_item:hover {
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    border: 2px solid rgb(182, 6, 59);
+    border-radius: 2em;
+    flex-basis: 23%;
+}
+.podobny_item a{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-basis: 100%;
+}
+.podobny_zdj {
+    margin: 2em;
+    margin-bottom: 1em;
+}
+
+.opinie {
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    background-color: rgba(233, 233, 233, 0.445);
+    padding: 2em;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.opinie h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.opinie_item {
+    flex-basis: 90%;
+    border: 2px solid grey;
+    background-color: rgb(210, 232, 255);
+    margin-bottom: 2em;
+    padding: 1.6em;
+    border-radius: 3em;
+}
+
+.opinie_item h5 {
+    font-size: large;
+    margin: 0.6em 0em;
+}
+
+.opinie_item i {
+    font-size: smaller;
+
+}
+
+.opinie_item p {
+    padding: 0em 1.5em;
+}
+
+.stopka {
+    flex-basis: 100%;
+    padding: 2em;
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    border-top: 0.2em rgb(76, 111, 156) solid;
+    display: flex;
+    justify-content: center;
+    order: 4;
+}
+
+.linki {
+    flex-basis: 40%;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linki a {
+    flex-basis: 45%;
+    margin: 0.2em;
+    text-decoration: none;
+}

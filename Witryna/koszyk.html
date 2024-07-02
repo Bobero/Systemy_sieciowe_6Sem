@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/koszyk.css">
+  <title>Sklep internetowy</title>
+</head>
+
+<body>
+  <div class="cont">
+
+    <header class="naglowek">
+      <a href="./index.html"><img src="./img/logo.PNG" class="logo"></a>
+      <nav>
+        <ul>
+          <li id="szukaj"><input type="text" placeholder="Znajdź wybrany produkt"><button class="lupa_butt"><img src="./img/lupa.png" id="lupa"></button></li>
+          <li><a href="./kategorie.html">Kategorie</a></li>
+          <li><a href="./sklep.html">Panel</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="./koszyk.html"><img src="./img/koszyk3.png" class="kosz_img"></a>
+    </header>
+
+    <main class="glowna">
+      <div class="koszyk">
+
+        <div class="lista">
+          
+          <div class="produkty">
+            <div class="produkt">
+              <a href="./produkt.html"><figure class="produkt_zdj"><img src="./img/sonyj210.jpg"></figure></a>
+              <a href="./produkt.html" class="prod_href"><h5 class="produkt_nazwa">Sony ericsson J210i</h5></a>
+              <p class="produkt_cena">201zł</p>
+              <select id="ile1" class="ile">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <button class="usun">
+                <img src="./img/kosz.png" class="bin">
+              </button>
+            </div>
+            <div class="produkt">
+              <a href="./produkt.html"><figure class="produkt_zdj"><img src="./img/nokia6110.jpg"></figure></a>
+              <a href="./produkt.html" class="prod_href"><h5 class="produkt_nazwa">Nokia 6110 </h5></a>
+              <p class="produkt_cena">220zł</p>
+              <select id="ile2" class="ile">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <button class="usun">
+                <img src="./img/kosz.png" class="bin">
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="dostawa">
+          <h3>Wybierz sposób dostawy</h3>
+          
+          <div class="dostawa_item">
+            <figure class="dostawa_zdj"><img src="./img/lokal.png"></figure>
+            <p class="dostawa_podpis">Odbiór w sklepie</p>
+          </div>
+          <div class="dostawa_item">
+            <figure class="dostawa_zdj"><img src="./img/local.png"></figure>
+            <p class="dostawa_podpis">Odbiór w punkcie</p>
+          </div>
+          <div class="dostawa_item">
+            <figure class="dostawa_zdj"><img src="./img/paczkomat.png"></figure>
+            <p class="dostawa_podpis">Paczkomat</p>
+          </div>
+          <div class="dostawa_item">
+            <figure class="dostawa_zdj"><img src="./img/dostawa.png"></figure>
+            <p class="dostawa_podpis">Dostawa kurierem</p>
+          </div>
+          
+        </div>
+
+        <div class="platnosc">
+          <h2>Do zapłaty: 320zł</h2>
+          <a class="platnosc_button" href="#">Przejdź do wyboru platnosci</a>
+        </div>
+      </div>
+
+      <div class="kreska"></div>
+      <div class="podobne">
+        <h3>Podobne produkty</h3>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="stopka">
+      <div class="linki">
+        <a href="#">Link do Facebooka</a>
+        <a href="#">Link do Forum</a>
+        <a href="#">Link do Mapy</a>
+        <a href="#">Link do Regulaminu</a>
+        <a href="#">Link do Polityki prywatności</a>
+        <a href="#">Link do Wsparcia technicznego</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

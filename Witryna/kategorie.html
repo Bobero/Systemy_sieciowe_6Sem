@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/kategorie.css">
+  <title>Sklep internetowy</title>
+</head>
+
+<body>
+  <div class="cont">
+
+    <header class="naglowek">
+      <a href="./index.html"><img src="./img/logo.PNG" class="logo"></a>
+      <nav>
+        <ul>
+          <li id="szukaj"><input type="text" placeholder="Znajdź wybrany produkt"><button class="lupa_butt"><img
+                src="./img/lupa.png" id="lupa"></button></li>
+          <li><a href="./kategorie.html">Kategorie</a></li>
+          <li><a href="./sklep.html">Panel</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="./koszyk.html"><img src="./img/koszyk3.png" class="kosz_img"></a>
+    </header>
+
+    <aside class="filtr">
+      <h3>Filtry</h3>
+      <div class="cena">
+        <h4>Cena</h4>
+        <p>Przedział cenowy:</p>
+        <input type="number" placeholder="od">zł
+        -
+        <input type="number" placeholder="do">zł
+      </div>
+      <div class="producent">
+        <h4>Producent</h4>
+        <label for="1" class="producent_item">
+          Samsung
+          <input type="checkbox" id="1" name="prod1" value="1">
+        </label>
+        <label for="2" class="producent_item">
+          Xiaomi
+          <input type="checkbox" id="2" name="prod2" value="2">
+        </label>
+        <label for="3" class="producent_item">
+          Sony
+          <input type="checkbox" id="3" name="prod3" value="3">
+        </label>
+        <label for="4" class="producent_item">
+          Huawei
+          <input type="checkbox" id="4" name="prod4" value="4">
+        </label>
+      </div>
+      <div class="ekran">
+        <h4>Wielkość ekranu</h4>
+        <label for="5" class="ekran_item">
+          poniżej 4,6"
+          <input type="checkbox" id="5" name="ekran1" value="1">
+        </label>
+        <label for="6" class="ekran_item">
+          od 4,7" do 4,9"
+          <input type="checkbox" id="6" name="ekran2" value="2">
+        </label>
+        <label for="7" class="ekran_item">
+          od 5" do 5,4"
+          <input type="checkbox" id="7" name="ekran3" value="3">
+        </label>
+        <label for="8" class="ekran_item">
+          od 5,5" do 6"
+          <input type="checkbox" id="8" name="ekran4" value="4">
+        </label>
+        <label for="9" class="ekran_item">
+          powyżej 6"
+          <input type="checkbox" id="9" name="ekran5" value="5">
+        </label>
+      </div>
+      <div class="pamiec">
+        <h4>Pamięć wbudowana</h4>
+        <label for="10" class="pamiec_item">
+          Do 8GB
+          <input type="checkbox" id="10" name="ekran1" value="1">
+        </label>
+        <label for="11" class="pamiec_item">
+          16GB
+          <input type="checkbox" id="11" name="ekran2" value="2">
+        </label>
+        <label for="12" class="pamiec_item">
+          32GB
+          <input type="checkbox" id="12" name="ekran3" value="3">
+        </label>
+        <label for="13" class="pamiec_item">
+          64GB
+          <input type="checkbox" id="13" name="ekran4" value="4">
+        </label>
+        <label for="14" class="pamiec_item">
+          128GB
+          <input type="checkbox" id="14" name="ekran5" value="5">
+        </label>
+      </div>
+      <div class="ram">
+        <h4>Pamięć RAM</h4>
+        <label for="15" class="ram_item">
+          16GB
+          <input type="checkbox" id="15" name="ekran1" value="1">
+        </label>
+        <label for="16" class="ram_item">
+          2GB
+          <input type="checkbox" id="16" name="ekran2" value="2">
+        </label>
+        <label for="17" class="ram_item">
+          8GB
+          <input type="checkbox" id="17" name="ekran3" value="3">
+        </label>
+        <label for="18" class="ram_item">
+          4GB
+          <input type="checkbox" id="18" name="ekran4" value="4">
+        </label>
+        <label for="19" class="ram_item">
+          2GB
+          <input type="checkbox" id="19" name="ekran5" value="5">
+      </div>
+      <div class="przyc"><button class="filtr_butt">Zastosuj filtry</button></div>
+    </aside>
+
+    <main class="glowna">
+      <section class="lista_prod">
+        <div class="lista_gora">
+          <label for="sortowanie">Sotrój według:
+            <select id="sortowanie">
+              <option value="1" selected>Popularność</option>
+              <option value="2">Cena: od najtańszych</option>
+              <option value="3">Cena: od najdroższych</option>
+              <option value="4">Nazwa A-Z</option>
+              <option value="5">Nazwa Z-A</option>
+            </select>
+          </label>
+          <a href="#" class="strz"><</a>1 z 5<a href="#"class="strz">></a>
+        </div>
+        <div class="lista_body">
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+          <div class="lista_item">
+            <a href="./produkt.html"><img class="lista_zdj" src="./img/sony.jpg" alt="Zdjęcie produktu"></a>
+            <h5>Nokia 3312x</h5>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+
+
+    <footer class="stopka">
+      <div class="linki">
+        <a href="#">Link do Facebooka</a>
+        <a href="#">Link do Forum</a>
+        <a href="#">Link do Mapy</a>
+        <a href="#">Link do Regulaminu</a>
+        <a href="#">Link do Polityki prywatności</a>
+        <a href="#">Link do Wsparcia technicznego</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

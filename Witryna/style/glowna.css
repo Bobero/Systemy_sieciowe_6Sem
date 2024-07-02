@@ -1,0 +1,320 @@
+
+body {
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+    font-size: 1.2em;
+    background: #EDF2F4;
+    margin: 0em;
+    padding: 0em;
+}
+a{
+    margin:0px;
+    padding: 0px;
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: #EDF2F4;
+}
+
+.naglowek {
+    flex-basis: 100%;
+    display: flex;
+    padding: 1.2em;
+    padding-top: 0em;
+    justify-content: center;
+    border-bottom: 0.2em rgb(76, 111, 156) solid;
+    align-items: center;
+}
+
+.naglowek a {
+    flex-basis: 10%;
+    align-self: center;
+}
+
+img {
+    width: 100px;
+    flex-basis: 100%;
+}
+.logo
+{
+    width: 15em;
+    border-radius: 1em;
+}
+.naglowek nav {
+    flex-basis: 100%;
+    margin-top: 0.7em;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    list-style: none;
+}
+
+li {
+    flex-basis: 15%;
+
+}
+#szukaj{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 1em;
+
+}
+.lupa_butt{
+    margin: 0;
+    padding: 0,2em;
+    background: white;
+    border: 1px solid gray;
+    border-left: none;
+}
+#lupa{
+    width: 30px;
+}
+
+li input[type=text] {
+    font-size: 17px;
+    border: 1px solid gray;
+    height: 40%;
+    padding: 1em;
+    border-right: none;
+
+  }
+
+li a {
+    display: block;
+    padding: 1em 0em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(82, 82, 82);
+    border-left: 2px rgb(76, 111, 156) solid;
+}
+li:last-child{
+    border-right: 2px rgb(76, 111, 156) solid;
+    margin-right: 1em;
+}
+li:last-child:hover{
+    border-right: 2px rgb(76, 111, 156) solid;
+    margin-right: 1em;
+}
+li a:hover {
+    text-decoration: none;
+    color: rgb(82, 82, 82); 
+    background: whitesmoke;
+}
+
+.kosz_img{
+    width: 70px;
+}
+.przecena{
+    flex-basis: 20%;
+    border-radius: 2px;
+    margin-top: 0.5em;
+    border-right: 0.2em rgb(76, 111, 156) solid;
+    
+}
+.napromocje  {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.przecenap{
+    margin: 0px;
+    padding: 0px;
+    flex-basis: 40%; 
+    display: flex;
+}
+.przecenap img{
+    flex-basis: 100%;
+    margin: 2em 0.5em;
+    cursor: pointer;
+
+}
+.przecenap img:hover{
+    opacity: 0.7;
+}
+.przecenad{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-basis: 90%; 
+}
+#przecena_dnia {
+    flex-basis: 100%;
+    border: 0.3em rgb(155, 168, 184) solid;
+    padding: 2em 0em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+
+}
+ #przecena_dnia:hover{
+ border: 0.3em rgb(219, 20, 129) ridge;
+ border-radius: 1em;
+}
+aside h3 {
+    margin-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    font-size: 2.2em;
+}
+aside h4 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    flex-basis: 100%;
+    border-top: 0.3em solid rgb(255, 1, 98);
+    border-bottom: 0.3em solid rgb(255, 1, 98);
+    background-image: url("/img/tlocolor.png");
+    font-weight: 700;
+}
+.glowna{
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    padding-top: 0em;
+    justify-content: center;
+    
+}
+.karuzela{
+    flex-basis: 93%;
+    display: flex;
+    padding: 2em;
+}
+
+.tydzien{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.tydzien h3{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+    background-color: rgb(158, 107, 224);
+    border-radius: 0.5em;
+}
+.tydzien_item{
+    flex-basis: 23%;
+    border: 2px solid teal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0em;
+    padding-bottom: 2em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.tydzien_item h5{
+    font-size: 1.5em;
+}
+.tydzien_item:hover{
+    opacity : 0.70;
+    filter : alpha(opacity=70);
+    border: 2px solid rgb(182, 6, 59);
+    border-radius: 2em;
+}
+.tydzien_item a{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-basis: 100%;
+}
+.tydzien_zdj {
+   margin: 3em;
+}
+h4{
+    text-transform: uppercase;
+}
+.opis{
+    border: 1px gray solid;
+    padding: 3em;
+    border-radius: 1.5em;
+}
+.opis p{
+    font-size: x-large;
+    line-height: 1.5em;
+}
+span{
+    margin-left: 2em;
+    text-transform: uppercase;
+}
+.polecane{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+}
+.polecane h3{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+   background-color: rgb(64, 142, 243);
+   border-radius: 0.5em;
+}
+.polecane_item {
+    flex-basis: 21%;
+    margin: 2em 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5em;
+}
+.polecane_item:hover{
+    border: 1px solid gray;
+    border-radius: 1em;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.polecane_item a{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-basis: 100%;
+}
+.polecane_item a h5{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+.stopka {
+    flex-basis: 100%;
+    padding: 2em;
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    border-top: 0.2em rgb(76, 111, 156) solid;
+    display: flex;
+    justify-content: center;
+    order: 4;
+}
+
+.linki {
+    flex-basis: 40%;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linki a {
+    flex-basis: 45%;
+    margin: 0.2em;
+    text-decoration: none;
+}

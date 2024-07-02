@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/produkt.css">
+  <title>Sklep internetowy</title>
+</head>
+
+<body>
+  <div class="cont">
+
+    <header class="naglowek">
+      <a href="./index.html"><img src="./img/logo.PNG" class="logo"></a>
+      <nav>
+        <ul>
+          <li id="szukaj"><input type="text" placeholder="Znajdź wybrany produkt"><button class="lupa_butt"><img src="./img/lupa.png" id="lupa"></button></li>
+          <li><a href="./kategorie.html">Kategorie</a></li>
+          <li><a href="./sklep.html">Panel</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="./koszyk.html"><img src="./img/koszyk3.png" class="kosz_img"></a>
+    </header>
+
+
+    <main class="glowna">
+      <div class="produkt">
+        <figure class="zdjecie_produktu">
+          <img src="./img/telefon.jfif" alt="Zdjęcie Przykładowego produktu" id="prod">
+        </figure>
+        <div class="dane">
+          <h4>Samsung GT-B2100</h4>
+          <p>Pamięć <b>10MB</b></p>
+          <p>Książka tel. <b>1000 pozycji</b></p>
+          <p>Bateria <b>1000mAh</b></p>
+          <p>Aparat <b>1.3 Mpx</b></p>
+          <p>Waga <b>102.0 g</b></p>
+          <p>Wymiary <b>113x49x17.5 mm</b></p>
+          <p>Wodo- i pyłoszczelność <b>IP57</b></p>
+          <p>Procesor <b>PNX6512</b></p>
+        </div>
+        <div class="platnosc">
+          <figure class="svg"><img src="./img/dostawa.png"></figure>
+          <h3>Dostawa do 2 dni roboczych</h3>
+          <figure class="svg"><img src="./img/lokal.png"></figure>
+          <h3>Darmowy odbiór w salonie</h3>
+          <figure class="svg"><img src="./img/czas.png"></figure>
+          <h3>Zostały ostatnie sztuki!</h3>
+          <h3 id="cena">230zł</h3>
+          <label for="ile" id="szt">szt.</label>
+          <select id="ile">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <a href="./koszyk.html" id="koszyk">Dodaj do koszyka</a>
+        </div>
+      </div>
+      <div class="opis">
+        <h1>Opis produktu</h1>
+        <p>Zaprojektowany z myślą o maksymalnej wytrzymałości nowy SAMSUNG Solid B2100 można testować w wyjątkowo
+          trudnych warunkach. Nie zaszkodzi mu koziołkowanie w błocie, upadek na ziemię, deszcz czy pełne zanurzenie w
+          wodzie. Stanie na wysokości zadania podczas ektremalnych eskapad, a dzięki płaskiej, jednobryłowej konstrukcji
+          – także w pracy. Obok funkcji wysoce przydatnych w terenie, jak głośnik i latarka, SAMSUNG Solid B2100 jest
+          także wyposażony w funkcje multimedialne takie jak kamera i odtwarzacz muzyczny.</p>
+        <p>Zaprojektowany dla miejskich amatorów przygód, globtrotterów i poszukiwaczy- cechuje się prostym stylem,
+          ergonomiczną konstrukcją oraz wytrzymałą klawiaturą. SAMSUNG B2100 jest najbardziej płaskim odpornym na
+          zanurzenie w wodzie telefonem na rynku - stanowi dowod na to, że wytrzymałość może iść w parze z dobrym
+          stylem. Doskonale sprawdza się w pracy, jak i po godzinach. Odpowiadający Twojej energii życiowej, model B2100
+          jest dostępny w szerokiej gamie atrakcyjnych kolorów.</p>
+      </div>
+      <div class="podobne">
+        <h3>Podobne produkty</h3>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+        <div class="podobny_item">
+          <a href="./produkt.html"><img class="podobny_zdj" src="./img/sony.jpg" alt="Zdjęcie podobnego produktu"></a>
+          <h5>Najnowszy model</h5>
+        </div>
+      </div>
+      <div class="opinie">
+        <h1>Opinie naszych użytkowników</h1>
+        <div class="opinie_item">
+          <i>14.12.2019</i>
+          <h5>Janusz Skorupa</h5>
+          <div class="gwiazdki">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>Telefon nie do zajechania!! miałem okazję wypróbować jego możliwości w jednym z centrów handlowych:)
+            unurzałem go w wodzie, piachu, błocie i lodzie i skubany nadal działał:D mało tego! rzucałem nim o podłogę i
+            nawet depnąłem na niego!! – też działał! jestem w szoku że coś takiego powstało</p>
+        </div>
+        <div class="opinie_item">
+          <i>10.05.2020</i>
+          <h5>Anonimowy Antek</h5>
+          <div class="gwiazdki">
+            <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+          </div>
+          <p>Wczoraj zakupiłem taki model, ale wcześniej jak kolega pisze przetestowałem go wzdłuż i w szerz… Woda,
+            kamienie, nadmanganian potasu, błoto, skakanie, rzucanie i nawet jak to gość prezentujący mi ten telefon
+            stwierdził, “rozbijanie kotletów” nie jest mu straszne… Wytrzymał wszystko bez jakiejkolwiek rysy na
+            ekranie. Byłem naprawdę w pełnym szoku dlatego go też kupiłem. Ma wszystkie funkcje, które są potrzebne,
+            dzwoni i pisze co najważniejsze no i mp3, radio, aparat…
+            Jak narazie jestem zadowolony…</p>
+        </div>
+        <div class="opinie_item">
+          <i>20.03.2020</i>
+          <h5>Paweł Skoczek</h5>
+          <div class="gwiazdki">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p>Telefon do zadań specjalnych, możesz nim rzucać, topić go, mrozić, możesz nawet go uprać w spodniach, a on…
+            będzie działał. Cacko to jest przystosowane do tego typu rzeczy i nawet możesz nim przejechać 1,5 tonowym
+            samochodem, a ten telefon będzie działał.</p>
+        </div>
+        <div class="opinie_item">
+          <i>03.04.2020</i>
+          <h5>Mariusz Chorąży </h5>
+          <div class="gwiazdki">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>Telefon nie gubi zasięgu, nawet w miejscach, gdzie poprzednie które użytkowałem , jak np. w centrach
+            handlowych. połączenie bluetooth działa poprawnie ze słuchawkami (mam zwykła firmy samsung i motorola, oraz
+            stereo LG)— jedynie nie mogłem ustawić poleceń głosowych — czyli po naciśnięciu słuchawki dousznej — brak
+            możliwości wyartykułowania komendy głosowej — np. celem połączenia się z daną osobą, natomiast bardzo łatwo
+            nawiązuje połączenie bluetooth z komputerem (oczywiście też poprzez kabel). Słyszalność dzwonków
+            wbudowanych, jak też dodanych przeze mnie bardzo dobra.</p>
+        </div>
+        <div class="opinie_item">
+          <i>17.07.2016</i>
+          <h5>xxKrzychu</h5>
+          <div class="gwiazdki">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p>po wielu doswiadczenich z moimi telefonami roznych marek moge stwierdzic z cala pewnoscia ze ten telefon
+            znalazl miejsce jako numer 1!! na mojej liscie. samsung poprawił wiele niedoskonalosci ze starszych modeli.
+            w b 2100 mozna ustawic wlasny dzwiek wiadomosci:)duzym udogodnieniem podczas wysylania sms jest mozliwosc
+            szybkiego dostepu do kontaktów ktorych ostatnio uzywaliśmy(jak w SE) reszta zalet samsungow jest Wam pewnie
+            dobrze znana czyli dobrze dzialajaca klawaitura, zaslepki gdzie sie da i brak kurzu na wyswietlaczu</p>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="stopka">
+      <div class="linki">
+        <a href="#">Link do Facebooka</a>
+        <a href="#">Link do Forum</a>
+        <a href="#">Link do Mapy</a>
+        <a href="#">Link do Regulaminu</a>
+        <a href="#">Link do Polityki prywatności</a>
+        <a href="#">Link do Wsparcia technicznego</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

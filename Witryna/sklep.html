@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/sklep.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Sklep internetowy</title>
+</head>
+
+<body>
+  <div class="cont">
+
+    <header class="naglowek">
+      <a href="./index.html"><img src="./img/logo.PNG" class="logo"></a>
+      <nav>
+        <ul>
+          <li id="szukaj"><input type="text" placeholder="Znajdź wybrany produkt"><button class="lupa_butt"><img src="./img/lupa.png" id="lupa"></button></li>
+          <li><a href="./kategorie.html">Kategorie</a></li>
+          <li><a href="./sklep.html">Panel</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="./koszyk.html"><img src="./img/koszyk3.png" class="kosz_img"></a>
+    </header>
+
+    <aside>
+      <h3>Przecenione produkty</h3>
+      <div clasa="napromocje">
+        <img src="./img/przecena.JPG">
+        <img src="./img/przecena.JPG">
+        <img src="./img/przecena.JPG">
+        <img src="./img/przecena.JPG">
+        <img src="./img/przecena.JPG">
+        <img src="./img/przecena.JPG">
+      </div>
+    </aside>
+
+    <main class="glowna">
+      <div class="DodawanieProduktu">
+        <legend>Dodaj własny produkt</legend>
+        <form method="#">
+          <table id="WlasnyProdukt" class="table" border="0" cellspacing="1" cellpadding="2">
+            <tr class="thead-dark">
+              <th class="rowItem">Nazwa</th>
+              <th class="rowItem">Producent</th>
+              <th class="rowItem">Cena</th>
+              <th class="rowItem">Ilość</th>
+              <th class="rowItem">Opis</th>
+            </tr>
+            <tr>
+              <td><input type="text" id="nazwa" placeholder="Nazwa" class="form-control"></td>
+              <td><input type="text" id="producent" placeholder="Producent" class="form-control"></td>
+              <td><input type="number" id="cena" class="form-control"></td>
+              <td><input type="number" id="ilosc" class="form-control"></td>
+              <td><input type="text" id="opis" placeholder="Krótki opis" class="form-control"></td>
+            </tr>
+          </table>
+          <br>
+        </form>
+        <input type="button" name="addRow" value="Dodaj produkt" onclick="DodajProdukt()">
+      </div>
+      <br><br>
+      <div class="Produkty">
+        <form name="formTable" action="#" >
+          <fieldset>
+            <legend>Spis Produktów</legend>
+            <table id="TabelaProduktow" class="table" border="0" cellspacing="1" cellpadding="2">
+              <thead class="thead-dark">
+              <tr>
+                <th class="rowItem" scope="col">Pogląd</th>
+                <th class="rowItem" scope="col">Nazwa</th>
+                <th class="rowItem" scope="col">Producent</th>
+                <th class="rowItem" scope="col">Cena</th>
+                <th class="rowItem" scope="col">Ilosc</th>
+                <th class="rowItem" scope="col">Opis</th>
+                <th class="rowItem" scope="col">Kup</th>
+              </tr>
+              </thead>
+            </table>
+          </fieldset>
+          <br><br>
+        </form>
+        <input type="button" value="Dokonaj zakupu" onclick="sumowanie()">
+      </div>
+    </main>
+
+    <aside class="reklama">
+      <h3>Reklama</h3>
+      <div>
+        <img src="./img/reklama.jpg">
+      </div>
+    </aside>
+
+    <footer class="stopka">
+      <div class="linki">
+        <a href="#">Link do Facebooka</a>
+        <a href="#">Link do Forum</a>
+        <a href="#">Link do Mapy</a>
+        <a href="#">Link do Regulaminu</a>
+        <a href="#">Link do Polityki prywatności</a>
+        <a href="#">Link do Wsparcia technicznego</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="./js/plik.js"></script>
+</body>
+
+</html>
